@@ -1,0 +1,339 @@
+*
+{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+
+}
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.navbar{
+	background-image: linear-gradient(to right, #73C1B2, #37B49E);
+}
+
+.navbar-brand img {
+	height: 80px;
+	padding-left:20%;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+.navbar-nav li a {
+	color: #fff !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+
+.fa-bars {
+	color: #fff;
+	font-size: 30px !important;
+	outline: #fff;
+}
+
+.navbar-toggler {
+	outline: none !important;
+}
+
+#banner {
+	background-image: linear-gradient(to right, #73C1B2, #37B49E);
+	color:#fff;
+	padding-top: 5%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.img-banner{
+	width: 60%;
+	height: auto;
+	margin-left: 10%;
+	margin-bottom: 5%;
+}
+
+.banner-text {
+	padding-bottom: 20px;
+}
+
+.promo-title {
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.search__input {
+    width: 100%;
+    padding: 24px 32px 25px 59px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 3%);
+    transition: background .4s, box-shadow .2s;
+}
+
+.search__input2 {
+    width: 100%;
+    padding: 24px 32px 25px 59px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: 2px solid green;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 3%);
+    transition: background .4s, box-shadow .2s;
+}
+
+.search__submit {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    margin-top: -10px;
+    outline: none;
+    cursor: pointer;
+    transition: transform .1s linear;
+}
+
+.search__input:active, .search__input:focus {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 14%);
+    background: white;
+    color: #3a3c4c;
+}
+
+.search__input:hover {
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 3%);
+}
+
+/*---------------Kategori Konten------------------------*/
+
+#kategory {
+
+}
+
+.kategory-bg {
+	background: #F5F5F5;
+	padding-bottom: 25px;
+}
+
+.content-bg {
+	background: #fff;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.content-blog {
+	margin: 5px;
+	padding: 5px;
+}
+
+.article-style {
+	margin: 5px;
+	padding: 10px;
+	border-style: groove;;
+}
+
+.custom-blocks {
+	padding: calc(15px * 2);
+	background: #fff;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 4px 8px 24px 3px rgba(208,209,209,0.75);
+}
+
+.brd-sparator {
+	padding-top: 20px;
+}
+
+.column {
+	position: relative;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.custom-block-kategori {
+	padding: calc(15px * 2);
+	display: block;
+	height: 100%;
+	text-align: center;
+	border-radius: 10px 10px 10px 10px;
+	background: #fff;
+	border: 2px solid #eceeef;
+	margin-bottom: 20px;
+}
+
+.custom-block-icon {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	margin: calc(18px * 1.45) auto calc(18px * 1.45 * 1.6);
+}
+
+.custom-block-icon img {
+	position: absolute;
+	top: 50%;
+	left: 50%
+	max-width:100%;
+	max-height: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.custom-block-title {
+	margin-bottom: 18px;
+	font-size: calc(18px * 1.45);
+	font-weight: 600;
+	color: #47BEA9;
+	margin-top: 15px;
+}
+
+.custom-block-title2 {
+	margin-bottom: 20px;
+	font-size: calc(24px * 1.45);
+	font-weight: 600;
+	color: #47BEA9;
+	margin-top: 15px;
+}
+
+
+.custom-block-title a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+}
+
+.box-informasi {
+	padding: calc(15px * 2);
+	background: #fff;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 4px 8px 24px 3px rgba(208,209,209,0.75);
+	margin-bottom: 30px;
+}
+
+.title-informasi {
+	font-size: 48px;
+	font-weight: 600;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.title-informasi-h3 {
+	font-size: 28px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.fa-money-check {
+	color: #47BEA9;
+	font-size: 42px !important;
+	outline: #fff;
+}
+
+/*---------------Button-------------------------*/
+.btn {
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  outline-color: #fff;
+}
+
+.green {
+  border-color: #fff;
+  color: #47BEA9;
+}
+
+.green:hover {
+  background-color: #47BEA9;
+  color: #fff;
+}
+
+.login-link a:hover {
+  	color: #47BEA9;
+}
+
+
+/*------------------------------------------------*/
+
+.card-design {
+	padding: 18px;
+	margin-bottom: 20px
+}
+
+.image-card {
+	padding-bottom: 15px;
+	margin-top: 20px;
+}
+
+.more-info {
+	color: #47BEA9;
+}
+/*---------------Footer section-------------------------*/
+
+#footer {
+	background-image: linear-gradient(to right, #73C1B2, #37B49E);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.footer-box {
+	padding: 20px;
+}
+
+.footer-box img{
+	height: 80px;
+}
+
+.footer-box p{
+	color: #fff;
+}
+
+.icon-footer {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.icon-sosmed {
+	color: #fff;
+	font-size: 48px;
+	margin-top: 5px;
+}
+
+
+
+.breadcrumb a:hover, a:visited, a:link, a:active {
+	text-decoration: none;
+	color: #47BEA9;
+}
+
+.sparator {
+	margin-top: 15px;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-linkedin {
+	color: #fff;
+}
+
+
