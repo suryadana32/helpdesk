@@ -1,1 +1,0 @@
-blog.blade.php

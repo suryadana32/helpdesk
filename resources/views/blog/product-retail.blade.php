@@ -7,21 +7,19 @@
 			<div class="container">
 				<nav aria-label="breadcrumb" class="sparator">
 				  <ol class="breadcrumb">
-				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item"><a href="{{ route('index') }}">Home</a></li>
 				    <li class="breadcrumb-item"><a href="#">Library</a></li>
-				    <li class="breadcrumb-item active" aria-current="page">Hardware</li>
+				    <li class="breadcrumb-item active" aria-current="page">Retail</li>
 				  </ol>
 				</nav>
 				<div class="row">
 					<div class="col-md-12">
-						<form action="/id/" autocomplete="off" class="header__form search">
-					        <input type="text" autocomplete="off" class="search__input2 js__search-input o__ltr" placeholder="Mencari jawaban..." tabindex="1" name="q" value="">
+						<form action="{{ route('blog.search') }}" autocomplete="off" class="header__form search">
+							@csrf
+					        <input type="text" autocomplete="off" class="search__input2 js__search-input o__ltr" placeholder="Mencari jawaban..." tabindex="1" name="search" value="">
 					        <div class="search_icons">
 					          <button type="submit" class="search__submit o__ltr"></button>
 					          <a class="search__clear-text__icon">
-					            <svg class="interface-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-					              <path d="M8.018 6.643L5.375 4 4 5.375l2.643 2.643L4 10.643 5.375 12l2.643-2.625L10.625 12 12 10.643 9.357 8.018 12 5.375 10.643 4z"></path>
-					            </svg>
 					          </a>
 					      	</div>
 					  	</form>
@@ -36,7 +34,10 @@
 					<div class="box-informasi align-items-center">
 						<div class="row">
 							<div class="col-md-10">
-								<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								<a data-bs-toggle="collapse" href="#fitur1" role="button" aria-expanded="false" aria-controls="fitur1">
+									<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								</a>
+								
 							</div>
 							<div class="col-md-2 align-items-center">
 								<a data-bs-toggle="collapse" href="#fitur1" role="button" aria-expanded="false" aria-controls="fitur1">
@@ -46,35 +47,22 @@
 						</div>
 						<hr>
 						<div class="collapse" id="fitur1">
+							@foreach( $post as $result)
 							<div class="row">
-								<a href="blog.html">
-									<h3 class="custom-block-title">Printers Throuble Shot and Setting</h3>
+								<a href="{{ route('blog.category', $result->slug) }}">
+									<h3 class="custom-block-title">{{ $result->judul }}</h3>
 								</a>
 							</div>
 							<hr>
-							<div class="row">
-								<a href="blog.html">
-									<h3 class="custom-block-title">Printers Throuble Shot and Setting</h3>
-								</a>
-							</div>
-							<hr>
-							<div class="row">
-								<a href="blog.html">
-									<h3 class="custom-block-title">Printers Throuble Shot and Setting</h3>
-								</a>
-							</div>
-							<hr>
-							<div class="row">
-								<a href="blog.html">
-									<h3 class="custom-block-title">Printers Throuble Shot and Setting</h3>
-								</a>
-							</div>
+							@endforeach
 						</div>
 					</div>
 					<div class="box-informasi align-items-center">
 						<div class="row">
 							<div class="col-md-10">
-								<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								<a data-bs-toggle="collapse" href="#fitur2" role="button" aria-expanded="false" aria-controls="fitur2">
+									<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								</a>
 							</div>
 							<div class="col-md-2 align-items-center">
 								<a data-bs-toggle="collapse" href="#fitur2" role="button" aria-expanded="false" aria-controls="fitur2">
@@ -112,7 +100,9 @@
 					<div class="box-informasi align-items-center">
 						<div class="row">
 							<div class="col-md-10">
-								<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								<a data-bs-toggle="collapse" href="#fitur3" role="button" aria-expanded="false" aria-controls="fitur3">
+									<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								</a>
 							</div>
 							<div class="col-md-2 align-items-center">
 								<a data-bs-toggle="collapse" href="#fitur3" role="button" aria-expanded="false" aria-controls="fitur3">

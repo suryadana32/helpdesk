@@ -36,7 +36,10 @@
 					<div class="box-informasi align-items-center">
 						<div class="row">
 							<div class="col-md-10">
-								<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								<a data-bs-toggle="collapse" href="#fitur1" role="button" aria-expanded="false" aria-controls="fitur1">
+									<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								</a>
+								
 							</div>
 							<div class="col-md-2 align-items-center">
 								<a data-bs-toggle="collapse" href="#fitur1" role="button" aria-expanded="false" aria-controls="fitur1">
@@ -74,7 +77,9 @@
 					<div class="box-informasi align-items-center">
 						<div class="row">
 							<div class="col-md-10">
-								<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								<a data-bs-toggle="collapse" href="#fitur2" role="button" aria-expanded="false" aria-controls="fitur2">
+									<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								</a>
 							</div>
 							<div class="col-md-2 align-items-center">
 								<a data-bs-toggle="collapse" href="#fitur2" role="button" aria-expanded="false" aria-controls="fitur2">
@@ -112,7 +117,9 @@
 					<div class="box-informasi align-items-center">
 						<div class="row">
 							<div class="col-md-10">
-								<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								<a data-bs-toggle="collapse" href="#fitur3" role="button" aria-expanded="false" aria-controls="fitur3">
+									<h2 class="custom-block-title2">Printers Throuble Shot and Setting</h2>
+								</a>
 							</div>
 							<div class="col-md-2 align-items-center">
 								<a data-bs-toggle="collapse" href="#fitur3" role="button" aria-expanded="false" aria-controls="fitur3">

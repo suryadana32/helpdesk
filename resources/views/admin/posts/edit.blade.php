@@ -39,7 +39,7 @@
 	</div>
 	<div class="form-group">
 		<label>Konten</label>
-		<textarea type="text" name="content" class="form-control" value="">
+		<textarea type="text" name="content" class="form-control" value="" id="content" style="resize: none ">
 			{{ $post->content }}
 		</textarea>
 	</div>
@@ -51,5 +51,12 @@
 		<button class="btn btn-primary btn-block">Simpan</button>
 	</div>
 </form>
+<script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'content', {
+    	filebrowserUploadUrl: "{{ route('ckeditor.upload', ['_token'=> csrf_token() ]) }}",
+    	filebrowserUploadMethod: 'form'
+    } );
+</script>
 
 @endsection

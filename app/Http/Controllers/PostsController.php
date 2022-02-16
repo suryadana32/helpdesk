@@ -18,7 +18,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('admin.posts.index',['posts'=>Posts::paginate(30)]);
+        return view('admin.posts.index',['posts'=>Posts::paginate(20)]);
     }
 
     /**
@@ -31,6 +31,20 @@ class PostsController extends Controller
         $categories = Category::all();
         $tags = Tags::all();
         return view('admin.posts.create',compact('categories','tags'));
+    }
+
+    public function ck_upload(Request $request)
+    {
+        $file = $request->upload;
+        $fileName = $file->getClientOriginalName();
+        $new_name = time()."-".$fileName;
+        $dir = "storage/upload/posts/";
+        $file->move($dir, $new_name);
+        $url = asset('storage/upload/posts/'.$new_name);
+        $CkeditorFuncNum = $request->input('CKEditorFuncNum');
+        $status = "<script>window.parent.CKEDITOR.tools.callFunction('$CkeditorFuncNum','$url','File Uploaded Successfuly')</script>";
+        echo $status;
+
     }
 
     /**
@@ -64,7 +78,7 @@ class PostsController extends Controller
         $post->tags()->attach($request->tags);
 
         $gambar->move('storage/upload/posts', $new_gambar);
-        return redirect()->back()->with('success','Post berhasil disimpan');
+        return redirect('posts')->with('success','Post berhasil disimpan');
 
     }
 
@@ -178,7 +192,11 @@ class PostsController extends Controller
 
     public function search(Request $request)
     {
-        $data = Posts::where('judul', $request->search)->orWhere('judul','like','%'.$request->search.'%')->paginate(10);
+        $data = Posts::where('judul', $request->search)
+                        ->orWhere('judul','like','%'.$request->search.'%')
+                        ->orWhere('content','like','%'.$request->search.'%')
+                        ->paginate(10);
+
         return view('admin.posts.result', compact('data'));
     }
 }

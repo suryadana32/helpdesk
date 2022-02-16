@@ -12,6 +12,6 @@ class Tags extends Model
    	protected $primaryKey = 'id_tag';
 
    	public function post() {
-   		return $this>belongsToMany(Tags::class);
+   		return $this->belongsToMany(Tags::class);
    	}
 }
